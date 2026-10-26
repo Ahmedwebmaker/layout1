@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+
+body {
+    margin: 10px;
+    font-family: Arial;
+}
+
+.header {
+    background-color: #111827;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.menu {
+    background-color: #f0394f;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.hero {
+    background-color: steelblue;
+    color: white;
+    padding: 70px;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+}
+
+.main {
+    background-color: #24354b;
+    color: white;
+    padding: 70px;
+    text-align: center;
+    flex: 2;
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.image {
+    background-color: lightblue;
+    padding: 35px;
+    text-align: center;
+    flex: 1;
+}
+
+.extra {
+    background-color: mediumseagreen;
+    padding: 35px;
+    text-align: center;
+    flex: 1;
+}
+
+.banner {
+    background-color: #ffd166;
+    padding: 25px;
+    text-align: center;
+}
+
+/* Mobile screen */
+@media screen and (max-width: 600px) {
+    .content {
+        display: block;
+    }
+
+    .main {
+        padding: 40px 10px;
+    }
+
+    .hero {
+        padding: 40px 10px;
+    }
+}
+
+/* Tablet screen */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    .hero {
+        padding: 60px;
+    }
+
+    .main {
+        padding: 50px;
+    }
+}
+
+
+
+    </style>
+
+</head>
+<body>
+    <div class="header">Header</div>
+    <div class="menu">Menu</div>
+    <div class="hero">Hero</div>
+    <div class="content">
+    <div class="main">MAin </div>
+    <div class="right">
+    <div class="image">Image</div>
+    <div class="extra">Extra</div>
+    </div>
+       </div>
+       <div class="banner">Banner</div>
+</body>
+</html>
